@@ -1,0 +1,133 @@
+@font-face {
+  font-family: 'Neue Machina';
+  src: url('../fonts/NeueMachina-Regular.otf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body::before {
+  top: -70%;
+  left: -45%;
+  width: 100%;
+  height: 100%;
+
+  content: '';
+  position: fixed;
+  z-index: -1;
+
+  background: linear-gradient(
+      90deg,
+      rgba(252, 160, 185, 1) 33%,
+      rgba(242, 112, 215, 1) 49.5%,
+      rgba(197, 121, 240, 1) 66%
+    )
+    no-repeat;
+  transform: rotate(-45deg);
+  filter: blur(110px);
+}
+
+body::after {
+  content: '';
+  position: fixed;
+  bottom: -60%;
+  right: -60%;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+
+  background: linear-gradient(
+      270deg,
+      rgba(61, 64, 251, 1) 33%,
+      rgba(91, 110, 226, 1) 49.5%,
+      rgba(121, 207, 225, 1) 57.75%,
+      rgba(173, 51, 98, 1) 66%
+    )
+    no-repeat;
+  transform: rotate(135deg);
+  filter: blur(110px);
+}
+
+body {
+  background-color: #000;
+  font-family: 'Open Sans', sans-serif;
+  color: #fff;
+  height: 100vh;
+  width: 100vw;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Neue Machina', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.container {
+  margin: 1.5rem 3rem;
+  padding: 0.5rem;
+  border: 0.9px solid;
+
+  border-image-source: radial-gradient(
+      circle at 13.35% -2.88%,
+      rgba(168, 168, 168, 0.83) 0%,
+      rgba(179, 179, 179, 0) 100%
+    ),
+    radial-gradient(
+      circle at 92.23% 100%,
+      rgba(211, 211, 211, 0.66) 0%,
+      rgba(169, 169, 169, 0) 100%
+    ),
+    radial-gradient(
+      circle at -1.21% 95%,
+      #f2f2f2 0%,
+      rgba(130, 130, 130, 0) 100%
+    );
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 425px) {
+  body::before {
+    top: -75%;
+    left: -95%;
+    width: 100%;
+    height: 100%;
+  }
+
+  body::after {
+    bottom: -75%;
+    right: -100%;
+    width: 115%;
+    height: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin: 2rem auto;
+    max-width: 85%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .container {
+    margin: 2rem auto;
+    max-width: 78%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    margin: 2rem auto;
+    max-width: 57.5%;
+  }
+}
