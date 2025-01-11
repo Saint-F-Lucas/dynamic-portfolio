@@ -228,3 +228,33 @@ div.profissionalSkills {
 }
 
 /* Portfolio Styles*/
+
+.portfolio ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.portfolio li {
+  list-style: none;
+}
+
+.portfolio h4 {
+  font-weight: 800;
+  margin: 0.4rem 0 0.2rem;
+}
+
+.portfolio h4::before {
+  content: '';
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+  background: url('../images/githubLogo.svg') no-repeat;
+  background-size: contain;
+}
+
+.portfolio a {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
