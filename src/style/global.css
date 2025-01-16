@@ -57,12 +57,7 @@ body {
   width: 100vw;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-family: 'Neue Machina', sans-serif;
   font-weight: 400;
 }
@@ -70,6 +65,22 @@ h6 {
 a {
   color: #fff;
   text-decoration: none;
+  transition: text-decoration 0.3s ease;
+  position: relative;
+}
+
+a:after {
+  content: '';
+  width: 100%;
+  border-bottom: 1px solid #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 450ms ease;
+}
+a:hover:after {
+  opacity: 1;
 }
 
 .container {
