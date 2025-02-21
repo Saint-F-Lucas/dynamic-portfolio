@@ -8,11 +8,10 @@
 
 .header__social h1 {
   font-size: 2rem;
-  text-align: center;
-  width: 60%;
+  text-align: left;
   margin: 0.67rem auto;
 }
-.header img {
+.header_image {
   width: 200px;
   height: 200px;
   border-radius: 50%;
@@ -29,33 +28,45 @@
 .header__social {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
+
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  padding: 0 0 0 2rem;
 }
 
 .header__social ul {
   list-style: none;
   padding: 0;
   margin: 0;
+  width: 50%;
+}
+
+.header__social span {
+  display: block;
 }
 
 .header__social li {
   display: flex;
   flex-direction: row;
   align-items: center;
+  text-align: left;
 
-  justify-content: flex-start;
   margin: 0.35rem 0;
   gap: 0.5rem;
+  flex-wrap: nowrap;
 }
 
-.header__social li svg {
+.header__social li img {
   max-height: 1rem;
   max-width: 1rem;
   margin: 0.35rem 0;
 }
 
-.header__social p {
+.header__social p,
+.header__social span,
+.header__social a {
   margin: 0.35rem 0;
 }
 
@@ -88,15 +99,9 @@
     order: 3;
   }
 
-  .header__social {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0 3rem;
-  }
   .header__social h1 {
     font-size: 2rem;
     text-align: left;
-    width: 100%;
   }
   .threeDots__header {
     margin-top: -2.5rem;

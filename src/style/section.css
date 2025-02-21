@@ -141,7 +141,7 @@ section.skills div.profissionalSkills ul {
   list-style: none;
 }
 
-section.skills div.profissionalSkills ul li svg {
+section.skills div.profissionalSkills ul li img {
   width: 3rem;
   height: 3rem;
 }
@@ -266,7 +266,7 @@ div.profissionalSkills {
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
-  background: url('../images/githubLogo.svg') no-repeat;
+  background: url('../images/github-logo.svg') no-repeat;
   background-size: contain;
 }
 
